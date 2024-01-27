@@ -14,7 +14,7 @@ export default (api: IApi) => {
   });
   const { analytics = {} } = api.userConfig;
   const { baidu = false, ga = GA_KEY } = analytics || {};
-  api.logger.log('insert analytics');
+  // api.logger.log('insert analytics');
 
   const baiduTpl = (code: string) => {
     return `
@@ -84,7 +84,7 @@ export default (api: IApi) => {
       ]);
     }
     if (ga) {
-      if (ga.startsWith("G")) {
+      if (ga.startsWith('G')) {
         api.addHTMLHeadScripts(() => [
           {
             content: gtagTpl(ga),
