@@ -1,6 +1,6 @@
 {
-  "name": "@umijs/plugin-analytics",
-  "version": "0.3.0",
+  "name": "anlytics-nolog",
+  "version": "0.3.1",
   "description": "analytics for baidu tongji and google analytics",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/plugins"
+    "url": "git+https://github.com/issaclam926/plugins.git"
   },
   "keywords": [
     "umi"
@@ -19,12 +19,22 @@
     "---"
   ],
   "license": "MIT",
-  "bugs": "http://github.com/umijs/plugins/issues",
-  "homepage": "https://github.com/umijs/plugins/tree/master/packages/plugin-analytics#readme",
+  "bugs": {
+    "url": "https://github.com/issaclam926/plugins.git"
+  },
+  "homepage": "https://github.com/issaclam926/plugins",
   "peerDependencies": {
     "umi": "3.x"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "issaclam"
 }
